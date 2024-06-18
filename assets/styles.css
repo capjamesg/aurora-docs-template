@@ -1,0 +1,163 @@
+* {
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+}
+html,
+body {
+    margin: 0;
+    background-color: rgb(246, 245, 240);
+}
+nav p,
+nav ul {
+    margin: 0;
+}
+nav {
+    background-color: lightblue;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+nav a {
+    color: black;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+nav a:hover,
+nav a:focus {
+    text-decoration: underline;
+}
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+main {
+    min-height: 100vh;
+    max-width: 60em;
+    margin: auto;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    border: 1px solid #ccc;
+}
+nav {
+    max-width: 60em;
+    margin: auto;
+}
+
+.current {
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+aside a {
+    color: black;
+    text-decoration: none;
+}
+aside li:hover {
+    text-decoration: underline;
+}
+#content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 45em;
+}
+img {
+    max-width: 100%;
+}
+pre {
+    border: 1px solid #ccc;
+    max-width: 100%;
+}
+aside {
+    padding: 1rem;
+    border-right: 1px solid #ccc;
+}
+aside h2 {
+    font-size: 1.1rem;
+}
+#logo {
+    max-height: 50px;
+}
+video {
+    max-width: 100%;
+}
+a {
+    color: royalblue;
+}
+button {
+    background-color: #aaaaff;
+    color: black;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.1rem;
+}
+a[rel="next"]::after {
+    content: " →";
+}
+p code,
+li code {
+    background-color: #aaaaff;
+    padding: 0.1rem;
+    border-radius: 0.25rem;
+}
+article li {
+    margin-bottom: 0.5rem;
+}
+.callout {
+    background-color: #f0f0ff;
+    padding: 1em;
+}
+#user-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    list-style-type: none;
+    padding: 0;
+}
+footer {
+    padding: 1rem;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: #aaa;
+}
+@media (max-width: 800px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+    aside {
+        border-right: none;
+    }
+    article {
+        padding: 1rem;
+    }
+    #content {
+        padding-left: 0;
+        padding-right: 0;
+        max-width: 100%;
+    }
+    pre {
+        max-width: 20em;
+    }
+    aside {
+        order: 2;
+    }
+}
+nav div {
+    display: flex;
+    align-items: center;
+}
+nav div p {
+    margin-left: 1rem;
+}
+.github-button-style {
+    margin: 0;
+    margin-top: 10px;
+    margin-right: 20px;
+}
