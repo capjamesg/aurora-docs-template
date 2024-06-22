@@ -1,6 +1,6 @@
 # Documentation Template
 
-A documentation tempalte built in Aurora, based on the [Aurora documentation](https://aurora.jamesg.blog.).
+A documentation template built in Aurora, based on the [Aurora documentation](https://aurora.jamesg.blog.).
 
 ![A documentation homepage with a sidebar](screenshot.png)
 
